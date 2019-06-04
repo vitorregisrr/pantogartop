@@ -1,0 +1,161 @@
+.lp-pant {
+
+    &--divisor{
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        
+
+        &--scrolldown{
+
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            z-index: 1;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            transform: translateY(50%);
+            background-image: url('../img/divisor-home.png');
+            z-index: 3;
+            background-size: 100% 100%;
+        }
+    }
+
+    &--home {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 120px);
+        max-height: calc(100vh - 120px);
+        min-height: calc(100vh - 120px);
+        background-image: url('../img/bghome.png');
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        padding: 60px 0;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+
+
+        @media screen and (max-width: 768px) {
+            padding: 40px 0;
+            max-height: calc(100vh - 80px);
+            min-height: calc(100vh - 80px);
+        }
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            background-size: cover;
+            background-position: 68%;
+        }
+
+        &__brand {
+            height: 90px;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+
+            @media screen and(max-width: 768px) {
+                height: 70px;
+            }
+
+
+            @media screen and(max-width: 398px) {
+                height: 50px;
+            }
+
+            img {
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+
+        &__caption {
+            height: 100%;
+            padding-top: 60px;
+            z-index: 5;
+
+            @media screen and (max-width: 768px) {
+                padding-top: 20px;
+            }
+
+            &__line {
+                width: 60px;
+                height: 5px;
+                background-color: #d0b376;
+                border: none;
+                margin: 30px 0 0 0;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
+
+                @media screen and(max-width: 368px) {
+                    margin: 10px 0;
+                }
+            }
+
+            &__text {
+                max-width: 100%;
+                color: #d0b376;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+                font-size: 40px;
+                letter-spacing: 5px;
+
+                @media screen and (max-width: 998px) {
+                    font-size: 34px;
+                    letter-spacing: 1px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
+                    font-size: 23px;
+                }
+            }
+        }
+
+        &__hero {
+            position: absolute;
+            height: 45vw;
+            width: 35vw;
+            right: -100px;
+            background-image: url('../img/hero1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-in;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.02);
+            }
+
+            @media screen and (max-width: 768px) {
+                right: 80px;
+                top: 0px;
+                height: 50vh;
+                width: 250px;
+            }
+
+            @media screen and (max-width: 398px) {
+                right: 30px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                right: -170px;
+            }
+
+            @media screen and (min-width: 1451px) {
+                right: -50px;
+                height: 700px;
+                width: 400px;
+            }
+        }
+
+    }
+}

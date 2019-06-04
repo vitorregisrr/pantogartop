@@ -1,0 +1,30 @@
+.lp-pant{
+    &--inner-title{
+        font-size: 28px;
+        font-weight: lighter;
+        color: #d0b376;
+        margin-bottom: 30px;
+    }
+    
+    &--inner-desc{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: lighter;
+        color: #fff;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+    
+        @media screen and(max-width: 768px){
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.m-0{
+    margin: 0 !important;
+}

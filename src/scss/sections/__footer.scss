@@ -1,0 +1,33 @@
+.lp-pant{
+    &--footer{
+        background-color: #d0b376;
+        padding: 20px;
+        border-top: 15px solid;
+        border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA, #B38728);
+        border-image-slice: 1;
+       
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 768px){
+                flex-direction: column;
+            }
+        }
+        
+        b{
+            margin-right: 20px;
+        }
+
+        p{
+
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        @media screen and (max-width: 768px){
+            text-align: center; 
+        }
+    }
+}

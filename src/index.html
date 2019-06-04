@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline Page</title>
+
+    <!-- Comentar JQUERY antes de criar a produção -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"
+        integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+    <script src="./js/main.js" defer></script>
+
+    <!-- Load fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body class="lp-pant">
+    <div class="lp-pant--page-wrapper">
+        <div class="lp-pant--divisor"></div>
+        <div class="lp-pant--scrolldown"></div>
+        <section id="lp-pant--home" class="lp-pant--home">
+            <div class="container">
+                <div class="lp-pant--home__brand">
+                    <img src="./img/logo.png" alt="Logo Pantogar">
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col-md-8">
+                        <div class="lp-pant--home__caption">
+                            <hr class="lp-pant--home__caption__line">
+                            <h4 class="lp-pant--home__caption__text">
+                                Solução tópica elaborada para prevenir e auxiliar no combate a queda de cabelos em
+                                homens e mulheres.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                        <div class="lp-pant--home__hero"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lp-pant--info" class="lp-pant--info">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="lp-pant--btn-group">
+                        <button class="lp-pant--btn lp-pant--btn-gold active" id="lp-pant--btn__conhecendo">Conhecendo o
+                            produto</button>
+                        <button class="lp-pant--btn lp-pant--btn-gold" id="lp-pant--btn__detalhes">Detalhes</button>
+                    </div>
+                </div>
+                <article id="lp-pant--info__conhecendo" class="lp-pant--info__conhecendo">
+                    <div class="row lp-pant--info__conhecendo__resumo">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img class="lp-pant--info__conhecendo__resumo__brand" src="./img/logo-branco.png"
+                                alt="Logo pantogar branco">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="lp-pant--inner-desc mb-3">A queda de cabelo pode ser decorrente do desequilíbrio
+                                do ciclo
+                                capilar, em
+                                virtude de
+                                diversas causas, como estresse, alterações nutricionais, uso de medicamentos, entre
+                                outras.
+                            </p>
+
+                            <p class="lp-pant--inner-desc">Pantogar® TOP favorece o crescimento, o volume e a força dos
+                                fios,
+                                desde
+                                que utilizado da
+                                maneira recomendada.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3 class="lp-pant--inner-title">
+                                Como Pantogar® TOP funciona?
+                            </h3>
+                            <p class="lp-pant--inner-desc">
+                                Pantogar® TOP foi desenvolvido especialmente para atuar no folículo piloso. Sua fórmula
+                                patenteada com extratos botânicos auxilia na prevenção e retarda a queda de cabelos,
+                                além de
+                                estimular o crescimento de novos fios, deixando o cabelo saudável e fortalecido.
+                            </p>
+                            <p class="lp-pant--inner-desc">
+                                Sua composição não possui fragrância, não contém parabenos e foi elaborada de maneira a
+                                não
+                                deixar o couro cabeludo oleoso.
+                            </p>
+                            <h3 class="lp-pant--inner-title">
+                                Durante quanto tempo se deve utilizar Pantogar® TOP?
+                            </h3>
+                            <p class="lp-pant--inner-desc">Os resultados podem ser observados após 6 semanas de uso. No
+                                entanto,
+                                você
+                                deve utilizar Pantogar® TOP por, no mínimo, 3 meses para alcançar melhores resultados.
+                            </p>
+                            <p class="lp-pant--inner-desc">
+                                Os resultados obtidos e o tempo necessário de utilização variam de pessoa para pessoa.
+                                Para
+                                manter os resultados, você deve continuar usando Pantogar® TOP como parte de sua rotina
+                                diária ou a critério médico. </p>
+                            <p class="lp-pant--inner-desc">Não existe um tempo máximo para o uso de Pantogar® TOP.</p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <div class="lp-pant--info__conhecendo__hero"></div>
+                        </div>
+                    </div>
+                </article>
+                <article id="lp-pant--info__detalhes" class="lp-pant--info__detalhes" style="display: none;">
+                    <div class="row">
+                        <div class="lp-pant--info__detalhes__item">
+                            <div class="lp-pant--info__detalhes__item__icon"><img src="./img/icone1.png" alt=""></div>
+                            <div class="lp-pant--info__detalhes__item__number">1.</div>
+                            <div class="lp-pant--info__detalhes__item__text">
+                                <p class="lp-pant--inner-desc">Agite o frasco antes de usar. Caso você tenha cabelos
+                                    longos, encaixe
+                                    o aplicador no frasco, para garantir que a solução seja aplicada diretamente no
+                                    couro
+                                    cabeludo.</p>
+                            </div>
+                        </div>
+
+                        <div class="lp-pant--info__detalhes__item">
+                            <div class="lp-pant--info__detalhes__item__icon"><img src="./img/icone2.png" alt=""></div>
+                            <div class="lp-pant--info__detalhes__item__number">2.</div>
+                            <div class="lp-pant--info__detalhes__item__text">
+                                <p class="lp-pant--inner-desc">Com a ajuda dos dedos, separe os cabelos para facilitar o
+                                    acesso ao
+                                    couro cabeludo.</p>
+                                <p class="lp-pant--inner-desc">Pressione o aplicador de 5 a 10 vezes, 2 vezes ao dia
+                                    (pela manhã e à
+                                    noite), em toda a superfície do couro cabeludo (seco ou molhado).</p>
+                            </div>
+                        </div>
+
+                        <div class="lp-pant--info__detalhes__item">
+                            <div class="lp-pant--info__detalhes__item__icon"><img src="./img/icone3.png" alt=""></div>
+                            <div class="lp-pant--info__detalhes__item__number">3.</div>
+                            <div class="lp-pant--info__detalhes__item__text">
+                                <p class="lp-pant--inner-desc">Massageie delicadamente o couro cabeludo para uma melhor
+                                    absorção.
+                                </p>
+                                <p class="lp-pant--inner-desc">Não enxague os cabelos logo após o uso, você poderá lavar
+                                    os cabelos
+                                    após 30 minutos da aplicação, se necessário.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <footer id="lp-pant--footer" class="lp-pant--footer">
+            <div class="container">
+                <div><b>Referências bibliográficas:</b></div>
+                <div>
+                    <p>Pantogar Top: fórmula patenteada com extratos botânicos. Instruções de uso. Biolab Sanus
+                        Farmacêutica, 2018.</p>
+                    <p>Pantogar Top: fórmula patenteada com extratos botânicos. Rótulo do produto. Biolab Sanus
+                        Farmacêutica, 2018.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

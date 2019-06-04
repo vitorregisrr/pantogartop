@@ -1,0 +1,22 @@
+.lp-pant{
+    @import './vendor/bootstrap-grid.min.scss';
+    @import './misc/_all';
+    @import './components/_all';
+    @import './mixins/_all';
+    @import './sections/_all';
+
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Merriweather', serif;
+
+    &--page-wrapper{
+        width: 100%;
+        background-color: #027052;
+        overflow: hidden;
+    }
+}
