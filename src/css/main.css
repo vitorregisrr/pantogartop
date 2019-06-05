@@ -1702,6 +1702,10 @@
         display: block;
         background-size: cover;
         background-position: 68%; } }
+    @media screen and (max-height: 948px) and (min-width: 768px) and (max-width: 1455px) {
+      .lp-pant .lp-pant--home {
+        background-size: 120% 120%;
+        background-position: 40%; } }
     .lp-pant .lp-pant--home__brand {
       height: 90px;
       display: flex;
@@ -1802,7 +1806,7 @@
         text-align: center; } }
   .lp-pant .lp-pant--info {
     background-image: url(../img/bginfo.png);
-    background-size: 100% 100%;
+    background-size: cover;
     padding: 140px 0 80px 0;
     min-height: 100vh;
     text-align: justify; }

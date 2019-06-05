@@ -83,6 +83,11 @@
             background-position: 68%;
         }
 
+        @media screen and (max-height: 948px) and (min-width: 768px) and (max-width: 1455px){
+            background-size: 120% 120%;
+            background-position: 40%;
+        }
+
         &__brand {
             height: 90px;
             display: flex;
