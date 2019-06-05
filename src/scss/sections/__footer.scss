@@ -3,7 +3,7 @@
         background-color: #d0b376;
         padding: 20px;
         border-top: 15px solid;
-        border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA, #B38728);
+        border-image-source: linear-gradient(to right bottom, #aa6d28 2%, #FCF6BA, #f0e397, #aa6d28 50% );
         border-image-slice: 1;
        
         .container{
@@ -21,9 +21,10 @@
         }
 
         p{
-
-            font-size: 12px;
-            margin-bottom: 2px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            margin: 5px;
         }
 
         @media screen and (max-width: 768px){

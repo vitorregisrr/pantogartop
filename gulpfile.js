@@ -20,8 +20,6 @@ gulp.task('production', async() => {
                 return base64({maxImageSize: 9999999999});
             }, 
         }))
-        .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(uglifycss({mangle: false}))
         .pipe(gulp.dest('dist/'));
 });
 
@@ -36,6 +34,7 @@ gulp.task('base64', async() => {
     gulp
         .src('./src/css/main.css')
         .pipe(base64())
+        .pipe(uglifycss({mangle: false}))
         .pipe(gulp.dest('./src/css/'))
 });
 
