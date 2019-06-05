@@ -1,5 +1,31 @@
 .lp-pant {
 
+    &--scrolldown{
+        background: none;
+        border: none;
+        background-image: url('../img/chevron-down.png');
+        background-position: center;
+        background-position: contain;
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 40px;
+        right: 47%;
+        z-index: 1;
+
+        @media screen and(max-width: 768px){
+            right: 42%;
+            width: 40px;
+            height: 40px;
+        }
+
+        &:focus, &:active{
+            outline: none;
+        }
+    }
+
     &--divisor{
         width: 100%;
         height: 100vh;
@@ -7,24 +33,21 @@
         position: absolute;
         top: 0;
         left: 0;
-        pointer-events: none;
+        z-index: 4;
         
-
-        &--scrolldown{
-
-        }
-
         &::after {
             position: absolute;
             content: '';
             z-index: 1;
-            bottom: 0;
+            bottom: -1.5px;
             width: 100%;
             height: 200px;
             transform: translateY(50%);
             background-image: url('../img/divisor-home.png');
+            background-position: center;
             z-index: 3;
             background-size: 100% 100%;
+            pointer-events: none;
         }
     }
 
@@ -50,6 +73,7 @@
             min-height: calc(100vh - 80px);
             transform: translate3d(0,0,0);
             -webkit-transform: translate3d(0,0,0);
+            backface-visibility: hidden;
         }
 
         @media screen and (max-width: 768px) {
@@ -82,7 +106,6 @@
         &__caption {
             height: 100%;
             padding-top: 60px;
-            z-index: 5;
 
             @media screen and (max-width: 768px) {
                 padding-top: 20px;

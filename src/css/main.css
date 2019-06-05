@@ -1534,6 +1534,53 @@
     padding: 0 !important; }
   .lp-pant .m-0 {
     margin: 0 !important; }
+  .lp-pant .bounce {
+    -moz-animation: bounce 1.5s infinite;
+    -webkit-animation: bounce 1.5s infinite;
+    animation: bounce 1.5s infinite; }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
   .lp-pant .lp-pant--btn {
     font-family: 'Merriweather', serif !important;
     min-height: 40px;
@@ -1585,6 +1632,27 @@
         .lp-pant .lp-pant--btn-group button {
           margin-right: 0;
           margin-bottom: -3px; } }
+  .lp-pant .lp-pant--scrolldown {
+    background: none;
+    border: none;
+    background-image: url("../img/chevron-down.png");
+    background-position: center;
+    background-position: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    right: 47%;
+    z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .lp-pant .lp-pant--scrolldown {
+        right: 42%;
+        width: 40px;
+        height: 40px; } }
+    .lp-pant .lp-pant--scrolldown:focus, .lp-pant .lp-pant--scrolldown:active {
+      outline: none; }
   .lp-pant .lp-pant--divisor {
     width: 100%;
     height: 100vh;
@@ -1592,18 +1660,20 @@
     position: absolute;
     top: 0;
     left: 0;
-    pointer-events: none; }
+    z-index: 4; }
     .lp-pant .lp-pant--divisor::after {
       position: absolute;
       content: '';
       z-index: 1;
-      bottom: 0;
+      bottom: -1.5px;
       width: 100%;
       height: 200px;
       transform: translateY(50%);
       background-image: url("../img/divisor-home.png");
+      background-position: center;
       z-index: 3;
-      background-size: 100% 100%; }
+      background-size: 100% 100%;
+      pointer-events: none; }
   .lp-pant .lp-pant--home {
     position: relative;
     width: 100%;
@@ -1624,7 +1694,8 @@
         max-height: calc(100vh - 80px);
         min-height: calc(100vh - 80px);
         transform: translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0); } }
+        -webkit-transform: translate3d(0, 0, 0);
+        backface-visibility: hidden; } }
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--home {
         display: block;
@@ -1646,8 +1717,7 @@
         height: 100%; }
     .lp-pant .lp-pant--home__caption {
       height: 100%;
-      padding-top: 60px;
-      z-index: 5; }
+      padding-top: 60px; }
       @media screen and (max-width: 768px) {
         .lp-pant .lp-pant--home__caption {
           padding-top: 20px; } }
@@ -1730,7 +1800,7 @@
   .lp-pant .lp-pant--info {
     background-image: url("../img/bginfo.png");
     background-size: 100% 100%;
-    padding: 80px 0;
+    padding: 140px 0 80px 0;
     min-height: 100vh; }
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--info {
@@ -1778,20 +1848,35 @@
           width: 20%;
           color: #d0b376;
           font-size: 150px;
-          text-align: right; }
+          line-height: 120px;
+          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-bottom: 20px; }
+          @media screen and (max-width: 998px) {
+            .lp-pant .lp-pant--info__detalhes__item__number {
+              font-size: 105px;
+              line-height: 100px; } }
           @media screen and (max-width: 768px) {
             .lp-pant .lp-pant--info__detalhes__item__number {
               font-size: 90px;
-              text-align: center; } }
+              line-height: 95px;
+              text-align: center;
+              justify-content: center;
+              align-items: center; } }
         .lp-pant .lp-pant--info__detalhes__item__text {
           width: 60%;
           display: flex;
-          justify-content: flex-end;
+          justify-content: center;
+          align-items: flex-start;
           flex-direction: column; }
-          .lp-pant .lp-pant--info__detalhes__item__text .inner-desc {
+          .lp-pant .lp-pant--info__detalhes__item__text p {
             font-size: 17px;
-            margin-bottom: 5px;
+            margin-bottom: 0;
             text-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.356); }
+            .lp-pant .lp-pant--info__detalhes__item__text p:not(:last-child) {
+              margin-bottom: 20px; }
         @media screen and (max-width: 768px) {
           .lp-pant .lp-pant--info__detalhes__item {
             flex-direction: column;
