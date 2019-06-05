@@ -5,7 +5,8 @@ const gulp = require('gulp'),
     uglifycss = require('gulp-uglifycss'),
     imagemin = require('gulp-imagemin'),
     base64 = require('gulp-base64'),
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('production', async() => {
     gulp
@@ -27,6 +28,7 @@ gulp.task('sass', async() => {
     gulp
         .src('./src/scss/main.scss')
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./src/css/'))
 });
 
