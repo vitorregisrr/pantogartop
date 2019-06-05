@@ -1622,7 +1622,9 @@
       .lp-pant .lp-pant--home {
         padding: 40px 0;
         max-height: calc(100vh - 80px);
-        min-height: calc(100vh - 80px); } }
+        min-height: calc(100vh - 80px);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0); } }
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--home {
         display: block;
