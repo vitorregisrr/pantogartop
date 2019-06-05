@@ -1635,7 +1635,7 @@
   .lp-pant .lp-pant--scrolldown {
     background: none;
     border: none;
-    background-image: url("../img/chevron-down.png");
+    background-image: url(../img/chevron-down.png);
     background-position: center;
     background-position: contain;
     background-repeat: no-repeat;
@@ -1650,7 +1650,8 @@
       .lp-pant .lp-pant--scrolldown {
         right: 42%;
         width: 40px;
-        height: 40px; } }
+        height: 40px;
+        bottom: 90px; } }
     .lp-pant .lp-pant--scrolldown:focus, .lp-pant .lp-pant--scrolldown:active {
       outline: none; }
   .lp-pant .lp-pant--divisor {
@@ -1662,6 +1663,7 @@
     left: 0;
     z-index: 4; }
     .lp-pant .lp-pant--divisor::after {
+      background-image: url(../img/divisor-home.png);
       position: absolute;
       content: '';
       z-index: 1;
@@ -1669,7 +1671,6 @@
       width: 100%;
       height: 200px;
       transform: translateY(50%);
-      background-image: url("../img/divisor-home.png");
       background-position: center;
       z-index: 3;
       background-size: 100% 100%;
@@ -1680,7 +1681,7 @@
     height: calc(100vh - 120px);
     max-height: calc(100vh - 120px);
     min-height: calc(100vh - 120px);
-    background-image: url("../img/bghome.png");
+    background-image: url(../img/bghome.png);
     background-attachment: fixed !important;
     background-size: 100% 100%;
     padding: 60px 0;
@@ -1752,7 +1753,7 @@
       height: 45vw;
       width: 35vw;
       right: -100px;
-      background-image: url("../img/hero1.png");
+      background-image: url(../img/hero1.png);
       background-size: contain;
       background-repeat: no-repeat;
       transition: all 0.3s ease-in;
@@ -1798,10 +1799,11 @@
       .lp-pant .lp-pant--footer {
         text-align: center; } }
   .lp-pant .lp-pant--info {
-    background-image: url("../img/bginfo.png");
+    background-image: url(../img/bginfo.png);
     background-size: 100% 100%;
     padding: 140px 0 80px 0;
-    min-height: 100vh; }
+    min-height: 100vh;
+    text-align: justify; }
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--info {
         display: block;
@@ -1903,7 +1905,7 @@
         position: absolute;
         width: 65vw;
         height: 55vw;
-        background-image: url("../img/hero2.png");
+        background-image: url(../img/hero2.png);
         background-size: contain;
         background-repeat: no-repeat;
         top: 100px;
@@ -1920,13 +1922,7 @@
             margin-top: 20px; } }
         @media screen and (min-width: 1000px) {
           .lp-pant .lp-pant--info__conhecendo__hero {
-            right: -20px; } }
-        @media screen and (min-width: 1000px) {
-          .lp-pant .lp-pant--info__conhecendo__hero {
-            right: -20px; } }
-        @media screen and (min-width: 1200px) {
-          .lp-pant .lp-pant--info__conhecendo__hero {
-            right: -40px; } }
+            right: -100px; } }
         @media screen and (min-width: 1450px) {
           .lp-pant .lp-pant--info__conhecendo__hero {
             right: -140px;

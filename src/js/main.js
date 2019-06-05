@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function (){
     'use strict';
 
         $('.lp-pant--page-wrapper').fadeIn(400);
@@ -35,4 +35,4 @@
             scrollTop: $("#lp-pant--info").offset().top
         }, 600);
     })
-})();
+});

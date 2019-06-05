@@ -1,9 +1,10 @@
 .lp-pant {
     &--info {
-        background-image: url('../img/bginfo.png');
+        background-image: url(../img/bginfo.png);
         background-size: 100% 100%;
         padding: 140px 0 80px 0;
         min-height: 100vh;
+        text-align: justify;
 
         @media screen and (max-width: 768px) {
             display: block;
@@ -144,7 +145,7 @@
                 position: absolute;
                 width: 65vw;
                 height: 55vw;
-                background-image: url('../img/hero2.png');
+                background-image: url(../img/hero2.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 top: 100px;
@@ -164,15 +165,7 @@
                 }
 
                 @media screen and (min-width: 1000px) {
-                    right: -20px;
-                }
-
-                @media screen and (min-width: 1000px) {
-                    right: -20px;
-                }
-
-                @media screen and (min-width: 1200px) {
-                    right: -40px;
+                    right: -100px;
                 }
 
                 @media screen and (min-width: 1450px) {

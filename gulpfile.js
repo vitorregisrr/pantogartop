@@ -2,17 +2,26 @@ const gulp = require('gulp'),
     inline = require('gulp-inline'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin');
+    uglifycss = require('gulp-uglifycss'),
+    imagemin = require('gulp-imagemin'),
+    base64 = require('gulp-base64'),
+    htmlmin = require('gulp-htmlmin');
 
 gulp.task('production', async() => {
     gulp
-        .src('public/index.html')
+        .src('src/index.html')
         .pipe(inline({
             base: './public/',
             js: function () {
                 return uglify({mangle: false});
-            }
+            },
+
+            css: function(){
+                return base64({maxImageSize: 9999999999});
+            }, 
         }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(uglifycss({mangle: false}))
         .pipe(gulp.dest('dist/'));
 });
 
@@ -20,6 +29,13 @@ gulp.task('sass', async() => {
     gulp
         .src('./src/scss/main.scss')
         .pipe(sass())
+        .pipe(gulp.dest('./src/css/'))
+});
+
+gulp.task('base64', async() => {
+    gulp
+        .src('./src/css/main.css')
+        .pipe(base64())
         .pipe(gulp.dest('./src/css/'))
 });
 
