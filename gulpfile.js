@@ -46,6 +46,6 @@ gulp.task('listensass', async() => {
 gulp.task('imagesmin', async() => {
     gulp
         .src('./src/img/**/*')
-        .pipe(imagemin())
+        .pipe(imagemin({ optimizationLevel: 5}))
         .pipe(gulp.dest('./public/img'));
 });
