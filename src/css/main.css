@@ -1938,4 +1938,5 @@
   .lp-pant--page-wrapper {
     width: 100%;
     background-color: #027052;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }

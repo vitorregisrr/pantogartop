@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+        $('.lp-pant--page-wrapper').fadeIn(400);
+
     $('.lp-pant--btn').click(function () {
         $('.lp-pant--btn').removeClass('active');
         $(this).addClass('active');
