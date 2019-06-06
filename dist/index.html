@@ -45,7 +45,7 @@
 
     <!-- Scripts -->
     <script defer>
-document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant--page-wrapper").fadeIn(400),$(".lp-pant--btn").click(function(){$(".lp-pant--btn").removeClass("active"),$(this).addClass("active")}),$("#lp-pant--btn__detalhes").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__conhecendo").offset().top},800),$("#lp-pant--info__conhecendo").fadeOut(200,function(){$("#lp-pant--info__detalhes").fadeIn(200)})}),$("#lp-pant--btn__conhecendo").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__detalhes").offset().top},400),$("#lp-pant--info__detalhes").fadeOut(200,function(){$("#lp-pant--info__conhecendo").fadeIn(200)})}),$("#lp-pant--scrolldown").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info").offset().top},600)})});
+document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant--page-wrapper").fadeIn(400),$(".lp-pant--btn").click(function(){$(".lp-pant--btn").removeClass("active"),$(this).addClass("active")}),$("#lp-pant--btn__detalhes").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__conhecendo").offset().top},800),$("#lp-pant--info__conhecendo").fadeOut(200,function(){$("#lp-pant--info__detalhes").fadeIn(200)}),$("#lp-pant--footer__conhecendo").fadeOut(200,function(){$("#lp-pant--footer__detalhes").fadeIn(200)})}),$("#lp-pant--btn__conhecendo").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__detalhes").offset().top},400),$("#lp-pant--info__detalhes").fadeOut(200,function(){$("#lp-pant--info__conhecendo").fadeIn(200)}),$("#lp-pant--footer__detalhes").fadeOut(200,function(){$("#lp-pant--footer__conhecendo").fadeIn(200)})}),$("#lp-pant--scrolldown").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info").offset().top},600)})});
 </script>
 
     <!-- Load fonts -->
@@ -1274,12 +1274,12 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     border-top: 15px solid;
     border-image-source: linear-gradient(to right bottom, #aa6d28 2%, #FCF6BA, #f0e397, #aa6d28 50%);
     border-image-slice: 1; }
-    .lp-pant .lp-pant--footer .container {
+    .lp-pant .lp-pant--footer__conhecendo, .lp-pant .lp-pant--footer__detalhes {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center; }
       @media screen and (max-width: 768px) {
-        .lp-pant .lp-pant--footer .container {
+        .lp-pant .lp-pant--footer__conhecendo, .lp-pant .lp-pant--footer__detalhes {
           flex-direction: column; } }
     .lp-pant .lp-pant--footer b {
       margin-right: 20px; }
@@ -1484,7 +1484,8 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                                 outras.
                             </p>
 
-                            <p class="lp-pant--inner-desc">Pantogar® TOP favorece o crescimento, o volume e a força dos
+                            <p class="lp-pant--inner-desc">Pantogar<small><sup>®</sup></small> TOP favorece o
+                                crescimento, o volume e a força dos
                                 fios,
                                 desde
                                 que utilizado da
@@ -1494,10 +1495,11 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                     <div class="row">
                         <div class="col-md-6">
                             <h3 class="lp-pant--inner-title">
-                                Como Pantogar® TOP funciona?
+                                Como Pantogar<small><sup>®</sup></small> TOP funciona?
                             </h3>
                             <p class="lp-pant--inner-desc">
-                                Pantogar® TOP foi desenvolvido especialmente para atuar no folículo piloso. Sua fórmula
+                                Pantogar<small><sup>®</sup></small> TOP foi desenvolvido especialmente para atuar no
+                                folículo piloso. Sua fórmula
                                 patenteada com extratos botânicos auxilia na prevenção e retarda a queda de cabelos,
                                 além de
                                 estimular o crescimento de novos fios, deixando o cabelo saudável e fortalecido.
@@ -1508,17 +1510,20 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                                 deixar o couro cabeludo oleoso.
                             </p>
                             <h3 class="lp-pant--inner-title">
-                                Durante quanto tempo se deve utilizar Pantogar® TOP?
+                                Durante quanto tempo se deve utilizar Pantogar<small><sup>®</sup></small> TOP?
                             </h3>
                             <p class="lp-pant--inner-desc">Os resultados podem ser observados após 6 semanas de uso. No
-                                entanto, você deve utilizar Pantogar® TOP por, no mínimo, 3 meses para alcançar melhores resultados.
+                                entanto, você deve utilizar Pantogar<small><sup>®</sup></small> TOP por, no mínimo, 3
+                                meses para alcançar melhores resultados.
                             </p>
                             <p class="lp-pant--inner-desc">
                                 Os resultados obtidos e o tempo necessário de utilização variam de pessoa para pessoa.
                                 Para
-                                manter os resultados, você deve continuar usando Pantogar® TOP como parte de sua rotina
+                                manter os resultados, você deve continuar usando Pantogar<small><sup>®</sup></small> TOP
+                                como parte de sua rotina
                                 diária ou a critério médico. </p>
-                            <p class="lp-pant--inner-desc">Não existe um tempo máximo para o uso de Pantogar® TOP.</p>
+                            <p class="lp-pant--inner-desc">Não existe um tempo máximo para o uso de
+                                Pantogar<small><sup>®</sup></small> TOP.</p>
                         </div>
                         <div class="col-md-5 d-flex justify-content-center align-items-center">
                             <div class="lp-pant--info__conhecendo__hero"></div>
@@ -1571,12 +1576,21 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         </section>
         <footer id="lp-pant--footer" class="lp-pant--footer">
             <div class="container">
-                <div><b>Referências bibliográficas:</b></div>
-                <div>
-                    <p>Pantogar TOP: fórmula patenteada com extratos botânicos. Instruções de uso. Biolab Sanus
-                        Farmacêutica, 2018.</p>
-                    <p>Pantogar TOP: fórmula patenteada com extratos botânicos. Rótulo do produto. Biolab Sanus
-                        Farmacêutica, 2018.</p>
+                <div id="lp-pant--footer__conhecendo" class="lp-pant--footer__conhecendo">
+                    <div><b>Referências bibliográficas:</b></div>
+                    <div>
+                        <p>Pantogar TOP: fórmula patenteada com extratos botânicos. Instruções de uso. Biolab Sanus
+                            Farmacêutica, 2018.</p>
+                        <p>Pantogar TOP: fórmula patenteada com extratos botânicos. Rótulo do produto. Biolab Sanus
+                            Farmacêutica, 2018.</p>
+                    </div>
+                </div>
+                <div id="lp-pant--footer__detalhes" class="lp-pant--footer__detalhes" style="display: none">
+                    <div><b>Referências bibliográficas:</b></div>
+                    <div>
+                        <p>Pantogar Top: fórmula patenteada com extratos botânicos. Monografia do produto. </p>
+                        <p>Biolab Sanus Farmacêutica, 201</p>
+                    </div>
                 </div>
             </div>
         </footer>

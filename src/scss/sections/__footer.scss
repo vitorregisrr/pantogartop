@@ -6,9 +6,9 @@
         border-image-source: linear-gradient(to right bottom, #aa6d28 2%, #FCF6BA, #f0e397, #aa6d28 50% );
         border-image-slice: 1;
        
-        .container{
+        &__conhecendo, &__detalhes{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
 
             @media screen and (max-width: 768px){

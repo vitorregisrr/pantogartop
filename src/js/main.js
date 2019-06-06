@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function (){
         $('#lp-pant--info__conhecendo').fadeOut(200, function () {
             $('#lp-pant--info__detalhes').fadeIn(200)
         })
+
+        $('#lp-pant--footer__conhecendo').fadeOut(200, function () {
+            $('#lp-pant--footer__detalhes').fadeIn(200)
+        })
     })
 
     $('#lp-pant--btn__conhecendo').click(function () {
@@ -26,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function (){
 
         $('#lp-pant--info__detalhes').fadeOut(200, function () {
             $('#lp-pant--info__conhecendo').fadeIn(200);
+        })
+
+        $('#lp-pant--footer__detalhes').fadeOut(200, function () {
+            $('#lp-pant--footer__conhecendo').fadeIn(200)
         })
     })
 
