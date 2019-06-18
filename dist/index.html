@@ -41,19 +41,36 @@
 ">
 
     <!-- Comentar JQUERY antes de criar a produção -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous" defer></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"
+        integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous" defer></script> -->
 
     <!-- Scripts -->
     <script defer>
 document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant--page-wrapper").fadeIn(400),$(".lp-pant--btn").click(function(){$(".lp-pant--btn").removeClass("active"),$(this).addClass("active")}),$("#lp-pant--btn__detalhes").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__conhecendo").offset().top},800),$("#lp-pant--info__conhecendo").fadeOut(200,function(){$("#lp-pant--info__detalhes").fadeIn(200)}),$("#lp-pant--footer__conhecendo").fadeOut(200,function(){$("#lp-pant--footer__detalhes").fadeIn(200)})}),$("#lp-pant--btn__conhecendo").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__detalhes").offset().top},400),$("#lp-pant--info__detalhes").fadeOut(200,function(){$("#lp-pant--info__conhecendo").fadeIn(200)}),$("#lp-pant--footer__detalhes").fadeOut(200,function(){$("#lp-pant--footer__conhecendo").fadeIn(200)})}),$("#lp-pant--scrolldown").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info").offset().top},600)})});
 </script>
 
-    <!-- Load fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
     <!-- Styles -->
     <style>
+@font-face {
+  font-family: "Pluto Sans Regular";
+  src: url("./fonts/PlutoSansRegular.eot");
+  src: url("./fonts/PlutoSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Pluto Sans Light";
+  src: url("./fonts/PlutoSansLight.eot");
+  src: url("./fonts/PlutoSansLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Pluto Sans Bold";
+  src: url("./fonts/PlutoSansBold.eot");
+  src: url("./fonts/PlutoSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Utopia";
+  src: url("./fonts/UtopiaSemiboldItalic.eot");
+  src: url("./fonts/UtopiaSemiboldItalic.ttf") format("truetype"); }
+
 .lp-pant {
   /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
@@ -69,7 +86,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  font-family: 'Merriweather', serif; }
+  font-family: 'Pluto Sans Regular'; }
 
 @-ms-viewport {
   .lp-pant {
@@ -1020,12 +1037,13 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     .lp-pant .align-self-xl-stretch {
       align-self: stretch !important; } }
   .lp-pant .lp-pant--inner-title {
-    font-size: 28px;
+    font-family: 'Utopia';
+    font-size: 33px;
     font-weight: lighter;
     color: #d0b376;
     margin-bottom: 30px; }
   .lp-pant .lp-pant--inner-desc {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pluto Sans Regular';
     font-size: 16px;
     font-weight: lighter;
     color: #fff;
@@ -1064,16 +1082,15 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
   .lp-pant .lp-pant--btn {
-    font-family: 'Merriweather', serif !important;
+    font-family: 'Pluto Sans Bold';
+    font-size: 17px;
     min-height: 40px;
     width: 50%;
     padding: 20px 70px;
     text-align: center;
     border: none;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.178);
-    font-size: 17px;
     text-transform: uppercase;
-    font-weight: bold;
     line-height: 19px;
     transition: border 0.1s ease-in;
     letter-spacing: 2px;
@@ -1092,8 +1109,6 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA, #B38728);
         border-image-slice: 1;
         color: #d0b376;
-        text-shadow: 1px 4px 6px rgba(14, 14, 14, 0.678);
-        font-weight: 900;
         background: #0e2f22;
         outline: none;
         z-index: 2; }
@@ -1226,9 +1241,10 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         max-width: 100%;
         color: #d0b376;
         font-weight: 500;
+        font-family: 'Utopia';
         text-transform: uppercase;
-        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
-        font-size: 40px;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.089);
+        font-size: 37px;
         letter-spacing: 5px; }
         @media screen and (max-width: 998px) {
           .lp-pant .lp-pant--home__caption__text {
@@ -1282,9 +1298,10 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         .lp-pant .lp-pant--footer__conhecendo, .lp-pant .lp-pant--footer__detalhes {
           flex-direction: column; } }
     .lp-pant .lp-pant--footer b {
-      margin-right: 20px; }
+      margin-right: 20px;
+      font-family: 'Utopia'; }
     .lp-pant .lp-pant--footer p {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Pluto Sans Regular';
       font-size: 15px;
       font-weight: 500;
       margin: 5px; }
@@ -1341,9 +1358,11 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                 width: 40%; } }
         .lp-pant .lp-pant--info__detalhes__item__number {
           width: 13%;
+          font-family: 'Utopia';
           color: #d0b376;
-          font-size: 150px;
+          font-size: 140px;
           line-height: 120px;
+          margin-right: 10px;
           text-align: right;
           display: flex;
           justify-content: flex-end;
@@ -1359,6 +1378,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
               line-height: 95px;
               text-align: center;
               justify-content: center;
+              margin-right: 0;
               align-items: center; } }
         .lp-pant .lp-pant--info__detalhes__item__text {
           width: 60%;

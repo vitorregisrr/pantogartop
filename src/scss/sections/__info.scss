@@ -66,9 +66,11 @@
 
                 &__number{
                     width: 13%;
+                    font-family: 'Utopia';
                     color: #d0b376;
-                    font-size: 150px;
+                    font-size: 140px;
                     line-height: 120px;
+                    margin-right: 10px;
                     text-align: right;
                     display: flex;
                     justify-content: flex-end;
@@ -85,6 +87,7 @@
                         line-height: 95px;
                         text-align: center;
                         justify-content: center;
+                        margin-right: 0;
                         align-items: center;
                     }
                 }
