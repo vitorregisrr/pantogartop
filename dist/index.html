@@ -40,9 +40,11 @@
     homens e mulheres.
 ">
 
-    <!-- Comentar JQUERY antes de criar a produção -->
-    <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"
+    <!-- Comentar JQUERY antes de criar a produção
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"
         integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous" defer></script> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap" rel="stylesheet"> -->
 
     <!-- Scripts -->
     <script defer>
@@ -52,24 +54,19 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     <!-- Styles -->
     <style>
 @font-face {
-  font-family: "Pluto Sans Regular";
-  src: url("./fonts/PlutoSansRegular.eot");
-  src: url("./fonts/PlutoSansRegular.ttf") format("truetype"); }
+  font-family: "Walsheim Regular";
+  src: url("./fonts/WalsheimProRegular.eot");
+  src: url("./fonts/WalsheimProRegular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Pluto Sans Light";
-  src: url("./fonts/PlutoSansLight.eot");
-  src: url("./fonts/PlutoSansLight.ttf") format("truetype"); }
+  font-family: "Walsheim Medium";
+  src: url("./fonts/WalsheimProMedium.eot");
+  src: url("./fonts/WalsheimProMedium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Pluto Sans Bold";
-  src: url("./fonts/PlutoSansBold.eot");
-  src: url("./fonts/PlutoSansBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Utopia";
-  src: url("./fonts/UtopiaSemiboldItalic.eot");
-  src: url("./fonts/UtopiaSemiboldItalic.ttf") format("truetype"); }
+  font-family: "Walsheim Bold";
+  src: url("./fonts/WalsheimProBold.eot");
+  src: url("./fonts/WalsheimProBold.ttf") format("truetype"); }
 
 .lp-pant {
   /*!
@@ -86,7 +83,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  font-family: 'Pluto Sans Regular'; }
+  font-family: 'Walsheim Regular'; }
 
 @-ms-viewport {
   .lp-pant {
@@ -1037,13 +1034,14 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     .lp-pant .align-self-xl-stretch {
       align-self: stretch !important; } }
   .lp-pant .lp-pant--inner-title {
-    font-family: 'Utopia';
+    font-family: 'Walsheim Bold';
     font-size: 33px;
     font-weight: lighter;
     color: #d0b376;
     margin-bottom: 30px; }
   .lp-pant .lp-pant--inner-desc {
-    font-family: 'Pluto Sans Regular';
+    font-family: 'Walsheim Regular';
+    font-weight: lighter;
     font-size: 16px;
     font-weight: lighter;
     color: #fff;
@@ -1052,6 +1050,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--inner-desc {
         margin-bottom: 20px; } }
+  .lp-pant .lp-pant--font-merriweather {
+    font-family: 'Merriweather', serif !important;
+    font-weight: lighter; }
   .lp-pant .p-0 {
     padding: 0 !important; }
   .lp-pant .m-0 {
@@ -1082,7 +1083,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
   .lp-pant .lp-pant--btn {
-    font-family: 'Pluto Sans Bold';
+    font-family: 'Walsheim Bold';
     font-size: 17px;
     min-height: 40px;
     width: 50%;
@@ -1241,7 +1242,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         max-width: 100%;
         color: #d0b376;
         font-weight: 500;
-        font-family: 'Utopia';
+        font-family: 'Walsheim Bold';
         text-transform: uppercase;
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.089);
         font-size: 37px;
@@ -1299,9 +1300,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
           flex-direction: column; } }
     .lp-pant .lp-pant--footer b {
       margin-right: 20px;
-      font-family: 'Utopia'; }
+      font-family: 'Walsheim Bold'; }
     .lp-pant .lp-pant--footer p {
-      font-family: 'Pluto Sans Regular';
+      font-family: 'Walsheim Medium';
       font-size: 15px;
       font-weight: 500;
       margin: 5px; }
@@ -1358,7 +1359,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                 width: 40%; } }
         .lp-pant .lp-pant--info__detalhes__item__number {
           width: 13%;
-          font-family: 'Utopia';
+          font-family: 'Walsheim Bold';
           color: #d0b376;
           font-size: 140px;
           line-height: 120px;
@@ -1381,6 +1382,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
               margin-right: 0;
               align-items: center; } }
         .lp-pant .lp-pant--info__detalhes__item__text {
+          font-family: 'Walsheim Regular';
           width: 60%;
           display: flex;
           justify-content: center;

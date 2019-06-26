@@ -1,6 +1,6 @@
 .lp-pant{
     &--inner-title{
-        font-family: 'Utopia';
+        font-family: 'Walsheim Bold';
         font-size: 33px;
         font-weight: lighter;
         color: #d0b376;
@@ -8,7 +8,8 @@
     }
     
     &--inner-desc{
-        font-family: 'Pluto Sans Regular';
+        font-family: 'Walsheim Regular';
+        font-weight: lighter;
         font-size: 16px;
         font-weight: lighter;
         color: #fff;
@@ -20,6 +21,10 @@
         }
     }
 
+    &--font-merriweather{
+        font-family: 'Merriweather', serif !important;
+        font-weight: lighter;
+    }
 }
 
 .p-0{
